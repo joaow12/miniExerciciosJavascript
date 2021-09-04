@@ -1,0 +1,1 @@
+Alguns mini exercicios em Javascript baseados nos disponibilizados no link: https://gustavoguanabara.github.io/javascript/exercicios/

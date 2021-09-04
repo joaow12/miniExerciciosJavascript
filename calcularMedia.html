@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Calcular valor</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="resultado">
+        </div>
+        <script type="text/javascript">
+
+            var cont = 0;
+            var nome;
+            var result;
+            var media = 0;
+            var nota;
+            var notas=[];
+            var msg;
+
+            nome = prompt("Digite o nome da pessoa que deseja ver saber a média");
+            cont = prompt("Digite quantas notas você deseja digitar");
+
+            for(var i=0; i<cont; i++){
+                nota = prompt("Digite a " + (i+1) + "° nota");
+                notas[i] = nota;
+            }
+
+            for(var i=0; i<cont; i++){
+                media += parseInt(notas[i]);
+            }
+
+            if(media/cont > 6){
+                msg = "Você foi APROVADO";
+            }else{
+                msg = "Você foi REPROVADO";
+            }
+
+            var result = document.getElementById("resultado");
+            result.innerHTML += "Calculando média final de " + nome + "</br> As notas obtidas foram: ";
+            for(var i=0; i<cont; i++){
+                result.innerHTML += notas[i] + ", ";
+            }
+            result.innerHTML += "</br>A média final é: " + media/cont + "</br>" + msg;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Fatorial</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var x;
+            x = prompt("Digite um número que deseja ver o fatorial");
+            var result = x;
+            for(var i=1; i<x; i++){
+                result = result*i;
+            }
+            while(x>1){
+                document.write(x + " x ");
+                x--;
+            }
+            document.write("1 = " + "<strong>" + result + "</strong>");
+        </script>
+    </body>
+</html>

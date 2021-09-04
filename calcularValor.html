@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Calcular valor</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var x;
+            var y;
+            var z;
+            var pares;
+            var impares;
+            impares = 0;
+            z = 0;
+            pares = 0;
+            x = parseInt(prompt("Digite o valor inicial"));
+            y = parseInt(prompt("Digite o valor final"));
+            for (cont = x; cont<=y; cont++)
+                {
+                    z = z+cont;
+                    if(cont%2 == 0){
+                        pares = pares + cont
+                    }
+                    else{
+                        impares++
+                    }
+                }
+            document.write("A soma de todos os números entre o intervalo de " + x + " e " + y + " é: " + z);
+            document.write("<br>" + "A soma dos numeros pares no intervalo de " + x + " e " + y + " é: " + pares);
+            document.write("<br>" + "A quantidade de numeros impares no intervalo de " + x + " e " + y + " é: " + impares);
+        </script>
+    </body>
+</html>
